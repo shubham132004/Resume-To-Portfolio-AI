@@ -9,6 +9,20 @@ An **AI-powered Streamlit application** that converts your **resume (PDF)** into
 Upload your resume → Download a complete portfolio website (HTML, CSS, JS) 🚀
 
 ---
+## 📌 Project Overview
+
+| Feature | Description |
+|------|------------|
+| Project Name | Resume to Portfolio Website Generator |
+| Description | Converts a resume PDF into a modern portfolio website using AI |
+| Input | Resume (PDF) |
+| Output | HTML, CSS, JavaScript (ZIP file) |
+| UI Framework | Streamlit |
+| AI Model | Google Gemini (`gemini-2.5-flash-lite`) |
+| Frontend Tech | Pure HTML, CSS, JavaScript |
+| Deployment | Local / Browser-ready |
+
+---
 
 ## ✨ Key Highlights
 
@@ -33,6 +47,21 @@ Upload your resume → Download a complete portfolio website (HTML, CSS, JS) �
 | Model Used | `gemini-2.5-flash-lite` |
 | PDF Processing | PyPDF |
 | Environment Variables | python-dotenv |
+
+---
+## ⚙️ Application Workflow
+
+| Step | Process |
+|----|--------|
+| 1 | Setup Google API using `.env` |
+| 2 | Upload Resume (PDF) |
+| 3 | Extract text from PDF |
+| 4 | Send text to Gemini model |
+| 5 | Apply system prompt (UI/UX + frontend rules) |
+| 6 | Generate HTML, CSS, JS |
+| 7 | Split files correctly |
+| 8 | Zip all files |
+| 9 | Download & open `index.html` |
 
 ---
 
@@ -74,6 +103,18 @@ Upload your resume → Download a complete portfolio website (HTML, CSS, JS) �
 
 8. **Instant Deployment**
    - Open `index.html` in any browser to view your portfolio 🎉
+
+---
+## 📦 Requirements
+
+| Library | Purpose |
+|------|---------|
+| streamlit | Web UI |
+| pypdf | PDF text extraction |
+| langchain | LLM orchestration |
+| langchain_google_genai | Gemini integration |
+| python-dotenv | Secure API key storage |
+| zipfile | File compression |
 
 ---
 
