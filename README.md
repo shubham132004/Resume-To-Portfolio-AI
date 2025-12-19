@@ -1,0 +1,195 @@
+# 📄 Resume to Portfolio Website Generator (AI-Powered)
+
+
+https://github.com/user-attachments/assets/ec746ff0-d88f-44f7-92db-77be48df84cc
+
+
+An **AI-powered Streamlit application** that converts your **resume (PDF)** into a **fully functional, modern, and visually stunning portfolio website** using **LangChain** and **Google Gemini (gemini-2.5-flash-lite)**.
+
+Upload your resume → Download a complete portfolio website (HTML, CSS, JS) 🚀
+
+---
+
+## ✨ Key Highlights
+
+- 📄 Upload **PDF Resume**
+- 🧠 AI-powered resume analysis using **Google Gemini**
+- 🎨 Generates a **modern, gradient-based portfolio website**
+- 💎 Card-based UI with smooth hover animations
+- 📱 Fully **responsive design**
+- 🧾 Clean separation of **HTML, CSS & JavaScript**
+- 📦 One-click **ZIP download**
+- ⚡ No frontend frameworks — **pure HTML, CSS, JS**
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Technologies |
+|--------|--------------|
+| Frontend Generator | HTML, CSS, JavaScript |
+| Backend / UI | Streamlit |
+| AI / LLM | LangChain + Google Gemini |
+| Model Used | `gemini-2.5-flash-lite` |
+| PDF Processing | PyPDF |
+| Environment Variables | python-dotenv |
+
+---
+
+## 🧠 How It Works (Architecture)
+
+1. **Environment Setup**
+   - Uses `python-dotenv` to securely load the Google API key from `.env`
+
+2. **Resume Upload**
+   - User uploads a **PDF resume** via Streamlit UI
+
+3. **Text Extraction**
+   - Resume text is extracted using **PyPDF**
+
+4. **AI Processing**
+   - Resume text is sent to **ChatGoogleGenerativeAI**
+   - Model analyzes and extracts:
+     - Name
+     - Role
+     - Summary
+     - Skills
+     - Experience
+     - Projects
+     - Education
+     - Achievements
+
+5. **System Prompt Engineering**
+   - AI is instructed to behave as a **Senior UI/UX Designer & Frontend Expert**
+   - Strict output format enforced for clean file separation
+
+6. **Website Generation**
+   - AI generates:
+     - `index.html`
+     - `style.css`
+     - `script.js`
+
+7. **ZIP Packaging**
+   - All files are compressed into a single **downloadable ZIP**
+
+8. **Instant Deployment**
+   - Open `index.html` in any browser to view your portfolio 🎉
+
+---
+
+## 🧾 System Prompt Used
+
+```text
+You are a senior UI/UX designer and expert frontend developer.
+
+Task:
+- Analyze resume text
+- Extract name, role, summary, skills, experience, projects, education, achievements
+- Generate a visually stunning portfolio website
+
+Design rules:
+- Gradient theme
+- Card-based layout
+- Smooth hover animations
+- Responsive design
+- Professional typography
+
+Tech rules:
+- Pure HTML, CSS, JS only
+- No frameworks
+
+STRICT OUTPUT FORMAT:
+--html--
+[HTML]
+--html--
+--css--
+[CSS]
+--css--
+--js--
+[JS]
+--js--
+```
+
+## 📁 Project Structure
+```bash
+├── main.py
+├── requirements.txt
+├── .env
+├── portfolio_website.zip
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+```
+
+# 🚀 Getting Started
+## 1️⃣ Clone the Repository
+```
+git clone  https://github.com/shubham132004/Resume-To-Portfolio-AI.git
+cd portfolio
+cd Scripts
+activate
+streamlit run main.py
+```
+
+## 2️⃣ Create Virtual Environment (Optional but Recommended)
+```
+python -m venv venv
+source venv/bin/activate   
+```
+
+## 3️⃣ Install Dependencies
+```
+pip install -r req.txt
+```
+
+## 4️⃣ Setup Environment Variables
+```
+Create a .env file in the root directory:
+
+gemini=YOUR_GOOGLE_API_KEY
+
+```
+🔐 API keys are kept secure using dotenv.
+
+## 5️⃣ Run the Application
+```
+streamlit run main.py
+```
+
+## 📥 Usage
+
+- Open the Streamlit app in your browser
+
+- Upload your resume PDF
+
+- Click Generate Portfolio Website
+
+- Download the ZIP file
+
+- Open index.html → Your portfolio is live 🎉
+
+## 🌟 Use Cases
+
+- Students building first portfolios
+
+- Professionals upgrading resumes
+
+- Freelancers showcasing projects
+
+- Rapid personal website generation
+
+- AI + Prompt Engineering demos
+
+## 🔮 Future Enhancements
+
+- Multiple design themes
+
+- Live preview before download
+
+- Custom domain deployment
+
+- Hosting integration (GitHub Pages / Netlify)
+
+- Resume quality scoring
+
+### Author : Shubham Parmar
